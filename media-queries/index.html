@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
   <title>Document</title>
 </head>
+
 <body>
   <nav>
     <h2>CSS Media Queries</h2>
@@ -18,13 +21,40 @@
     <section>
       <h2>Learning Resources</h2>
       <ul>
-        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries" target="_blank" rel="noreferrer">MDN Web Docs</a> (documentation)</li>
-        <li><a href="https://www.youtube.com/watch?v=2KL-z9A56SQ" target="_blank" rel="noreferrer">Tutorial: Learn how to use CSS Media Queries in less than 5 minutes</a> (video)</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries" target="_blank"
+            rel="noreferrer">MDN Web Docs</a> (documentation)</li>
+        <li><a href="https://css-tricks.com/a-complete-guide-to-css-media-queries/" target="_blank" rel="noreferrer">A
+            Complete Guide to CSS Media Queries</a> (article)</li>
+        <li><a href="https://www.youtube.com/watch?v=2KL-z9A56SQ" target="_blank" rel="noreferrer">Tutorial: Learn how
+            to use CSS Media Queries in less than 5 minutes</a> (video)</li>
       </ul>
     </section>
     <section>
+      <h2>Notes</h2>
+      <article>
+        <p>
+          Common breakpoints for widths of devices:
+        </p>
+        <ul>
+          <li>320px — 480px: Mobile devices <code>(i.e. @media (max-width: 480px) {...} )</code></li>
+          <li>481px — 768px: iPads, Tablets <code>(i.e. @media (max-width: 768px) {...} )</code></li>
+          <li>769px — 1024px: Small screens, laptops <code>(i.e. @media (max-width: 1024px) {...} )</code></li>
+          <li>1025px — 1200px: Desktops, large screens <code>(i.e. @media (max-width: 1200px) {...} )</code></li>
+          <li>1201px and more —  Extra large screens, TV <code>(i.e. @media (min-width: 1201px) {...} )</code></li>
+        </ul>
+      </article>
 
+      <article>
+        <p>Normally, in most of my projects I only use two media queries. One for phone widths and one for tablet width.
+          The rest I just use the normal global styles. </p>
+        <p>But there is one that I'd like to use more such as the <em><a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme">prefers-color-scheme</a></em>.
+          Which checks the prefered
+          colour scheme on you device, such as 'light' or 'dark' mode on your device.</p>
+
+      </article>
     </section>
   </main>
 </body>
+
 </html>
